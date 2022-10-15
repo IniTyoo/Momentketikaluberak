@@ -75,7 +75,7 @@ toggle_button(FORCE_AUTO_COLLECT, status)
 input_button(COLLECT_RANGE, range)
 end
 
-function collectSet(range)
+function collect(range)
 toggle_button(AUTO_COLLECT, true)
 toggle_button(FORCE_AUTO_COLLECT, true)
 input_button(COLLECT_RANGE, range)
