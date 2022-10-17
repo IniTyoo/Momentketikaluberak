@@ -99,7 +99,7 @@ return 0
 end
 
 function findPath(x,y)
-find_path(x,y)
+return find_path(x,y)
 end
 
 function getBot()
