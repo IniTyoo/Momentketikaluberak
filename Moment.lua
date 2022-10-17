@@ -69,6 +69,10 @@ function sendPacket(type,packet)
 send_packet(type,packet)
 end
 
+function sendPacketRaw(packet)
+send_packet_raw(packet)  
+end
+
 function collectSet(status, range)
 toggle_button(AUTO_COLLECT, status)
 toggle_button(FORCE_AUTO_COLLECT, status)
