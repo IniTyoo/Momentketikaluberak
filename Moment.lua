@@ -111,6 +111,15 @@ bot.world = get_world().name
 return bot
 end
 
+function getWorld()
+local world = {}
+world.name = get_world().name
+world.width = get_world().width
+world.height = get_world().height
+world.owner = get_world().owner
+return world
+end
+
 function getTile(x,y)
 local tile = {}
 tiles = get_tile(x,y)
