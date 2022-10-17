@@ -162,3 +162,17 @@ inventory[#inventory + 1] = {id = value.item_id, count = value.amount}
 end
 return inventory
 end
+
+
+-- HOOK
+function addHook(fname, id, func)
+add_hook(fname,id,func)
+end
+
+function removeHook(id)
+remove_hook(id)
+end
+
+function removeHooks()
+remove_hooks()
+end
