@@ -25,8 +25,8 @@ end
 function punch(x,y)
 pkt = {}
 pkt.type = 3
-pkt.tile_x = floor(get_local().pos_x / 32) + x
-pkt.tile_y = floor(get_local().pos_y / 32) + y
+pkt.tile_x = math.floor(get_local().pos_x / 32) + x
+pkt.tile_y = math.floor(get_local().pos_y / 32) + y
 pkt.pos_x = get_local().pos_x
 pkt.pos_y = get_local().pos_y
 pkt.int_data = 18
@@ -36,8 +36,8 @@ end
 function wrench(x,y)
 pkt = {}
 pkt.type = 3
-pkt.tile_x = floor(get_local().pos_x / 32) + x
-pkt.tile_y = floor(get_local().pos_y / 32) + y
+pkt.tile_x = math.floor(get_local().pos_x / 32) + x
+pkt.tile_y = math.floor(get_local().pos_y / 32) + y
 pkt.pos_x = get_local().pos_x
 pkt.pos_y = get_local().pos_y
 pkt.int_data = 32
@@ -45,16 +45,16 @@ send_packet_raw(pkt)
 end
 
 function move(x,y)
-posx = floor(get_local().pos_x / 32)
-posy = floor(get_local().pos_y / 32)
+posx = math.floor(get_local().pos_x / 32)
+posy = math.floor(get_local().pos_y / 32)
 find_path(posx + x, posy + y)
 end
 
 function place(id,x,y)
 pkt = {}
 pkt.type = 3
-pkt.tile_x = floor(get_local().pos_x / 32) + x
-pkt.tile_y = floor(get_local().pos_y / 32) + y
+pkt.tile_x = math.floor(get_local().pos_x / 32) + x
+pkt.tile_y = math.floor(get_local().pos_y / 32) + y
 pkt.pos_x = get_local().pos_x
 pkt.pos_y = get_local().pos_y
 pkt.int_data = id
