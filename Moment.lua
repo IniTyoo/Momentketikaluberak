@@ -65,6 +65,10 @@ function say(text)
 send_packet(2, "action|input\n|text|"..text)
 end
 
+function warp(worldname)
+send_packet(3,"action|join_request\nname|" .. worldname .."\ninvitedWorld|0")  
+end
+
 function sendPacket(type,packet)
 send_packet(type,packet)
 end
