@@ -78,19 +78,7 @@ send_packet_raw(packet)
 end
 
 function collectSet(status, range)
-toggle_button(AUTO_COLLECT, status)
-toggle_button(FORCE_AUTO_COLLECT, status)
-input_button(COLLECT_RANGE, range)
-end
-
-function collect(range)
-toggle_button(AUTO_COLLECT, true)
-toggle_button(FORCE_AUTO_COLLECT, true)
-input_button(COLLECT_RANGE, range)
-sleep(200)
-toggle_button(AUTO_COLLECT, false)
-toggle_button(FORCE_AUTO_COLLECT, false)
-input_button(COLLECT_RANGE, range)
+collect_set(status, range)
 end
 
 function findItem(id)
