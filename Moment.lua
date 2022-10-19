@@ -1,20 +1,3 @@
--- new function :v testing btw
-
-function getBots()
-local bots = {}
-for key, value in pairs(get_bots()) do
-bots[#bots + 1] = {
-name = value.name,
-x = value.pos_x,
-y = value.pos_y,
-netid = value.net_id,
-userid = value.user_id
-}
-end
-return bots
-end
-
-
 function wear(id)
 pkt = {}
 pkt.type = 10
