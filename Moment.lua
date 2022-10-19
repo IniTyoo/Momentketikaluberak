@@ -4,24 +4,13 @@ function getBots()
 local bots = {}
 for key, value in pairs(get_bots()) do
 bots[#bots + 1] = {
-name = value.name
-x = value.pos_x
-y = value.pos_y
-netid = value.net_id
+name = value.name,
+x = value.pos_x,
+y = value.pos_y,
+netid = value.net_id,
 userid = value.user_id
-clientid = value.client_id
 }
 end
-  
-  
-for key, value in pairs(get_bots()) do
-bots[key + 1].say = function(text)
-_CLIENT = value.client_id
-say(text)
-end
-end
-  
-  
 return bots
 end
 
