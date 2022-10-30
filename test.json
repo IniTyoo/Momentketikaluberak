@@ -1,10 +1,3 @@
-{
-      name: 'Oimgapeper',
-      status: 'Active',
-      ip: '123.456.789.0'
-},
-{
-      name: 'Oimgapeper2',
-      status: 'Active',
-      ip: '222.222.333'
-},
+[
+      {"name": "Oimgagapepr2", "status": "Active", "ip": "yg ngawi ngawi azza"}
+]
